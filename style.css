@@ -5,10 +5,107 @@ body {
     margin: 0;
 }
 
+@font-face {
+    font-family: EllographCF;
+    src: url("fonts/EllographCF-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: NanumGothicCoding;
+    src: url("fonts/NanumGothicCoding-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: calling;
+    src: url("fonts/calling-code-italic.otf") format("opentype");
+}
+
+.header-area {
+    background-color: white;
+    height: 123px;
+    color: black;
+    display: inline-flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.header-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.logo-next {
+    display: flex;
+}
+
+.logo-area img {
+    height: 72px;
+    margin-top: 16px;
+}
+
+.header-box .headliners {
+    margin-top: 0px;
+    display: inline-flex;
+    font-size: small;
+    margin-left: 38px;
+}
+
+.header-box img #myAvatar{
+    display: inline-flex;
+    width: 75px;
+    height: auto;
+    float: right;
+}
+
+.aboutMe-avatar {
+    width: 75px;
+    height: auto;
+    float: right;
+}
+
+.main-box {
+    position: relative;
+    padding: 40px 70px 60px 40px;
+}
+
+.main-box > * {
+    z-index: 999;
+}
+
+.main-box > img {
+    top: 0;
+    position: absolute;
+    opacity: 0.5;
+    filter: contrast(1.9) brightness(0.4) saturate(0.7);
+    transform: rotateY(180deg);
+    z-index: -999;
+    width: 35%;
+    right: 0;
+    margin-right: 6%;
+}
+
+.quotation {
+    font-family: -webkit-pictograph;
+    font-style: italic;
+    font-size: 17px;
+
+}
+
+body {
+    background-color: rgb(6, 6, 23);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
 .header-box {
     background-color: white;
     height: 130px;
-    padding: 10px 30px 5px 35px;
+    padding: 20px 30px 5px 30px;
     color: black;
 }
 
@@ -27,17 +124,29 @@ body {
     font-family: monospace;
 }
 
-.header-box img {
+.header-box img #myAvatar {
     display: inline-flex;
     width: 75px;
     height: auto;
     float: right;
 }
 
+.header-area > p {
+    color: #1d98d8;
+    position: relative;
+    bottom: 40px;
+    font-family: NanumGothicCoding;
+    font-size: 14.5px;
+    text-align: end;
+    padding-right: 11px;
+}
+
 .aboutMe-avatar {
     width: 75px;
     height: auto;
     float: right;
+    position: relative;
+    top: -18px;
 }
 
 .main-box {
