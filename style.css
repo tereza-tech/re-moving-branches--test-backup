@@ -7,9 +7,24 @@ body {
 
 .header-box {
     background-color: white;
-    height: 110px;
+    height: 130px;
     padding: 10px 30px 5px 35px;
     color: black;
+}
+
+.header-box > .headliners {
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header-box > .headliners > * {
+    margin: 23px 0 -4px 0;
+}
+
+
+.header-box > .headliners > p {
+    font-family: monospace;
 }
 
 .header-box img {
@@ -19,13 +34,15 @@ body {
     float: right;
 }
 
-.header-box > .headliners {
-    display: inline-flex;
+.aboutMe-avatar {
+    width: 75px;
+    height: auto;
+    float: right;
 }
 
 .main-box {
     position: relative;
-    padding: 40px 70px 60px 40px;
+    padding: 56px 70px 60px 40px;
 }
 
 .main-box > * {
@@ -41,7 +58,8 @@ body {
     z-index: -999;
     width: 35%;
     right: 0;
-    margin-right: 6%;
+    margin-right: 1%;
+    margin-top: 1%;
 }
 
 .quotation {
@@ -49,4 +67,13 @@ body {
     font-style: italic;
     font-size: 17px;
 
+}
+
+.gitgraph > img {
+    width: 20%;
+    filter: invert(0.8) hue-rotate(624deg) saturate(54) brightness(0.62) drop-shadow(2px 4px 6px black);
+    transform: rotate(90deg);
+    position: absolute;
+    left: -124px;
+    top: 363px;
 }
