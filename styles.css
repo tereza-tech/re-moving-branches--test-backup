@@ -9,10 +9,19 @@ body {
     background-color: white;
     height: 110px;
     padding: 10px 30px 5px 35px;
+    color: black;
+}
+
+.header-box > img {
+    display: inline;
+}
+
+.header-box > .headliners {
+    display: inline-flex;
 }
 
 .aboutMe-avatar {
-    width: 85px;
+    width: 75px;
     height: auto;
     float: right;
 }
