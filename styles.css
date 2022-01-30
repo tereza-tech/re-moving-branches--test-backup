@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(6, 6, 23);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+.header-box {
+    background-color: white;
+    height: 110px;
+    padding: 10px 30px 5px 35px;
+}
+
+.aboutMe-avatar {
+    width: 85px;
+    height: auto;
+    float: right;
+}
+
+.main-box {
+    padding: 40px 70px 60px 40px;
+}
